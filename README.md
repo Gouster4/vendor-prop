@@ -18,3 +18,9 @@ and you dont want to be notified, because there is nothing we can do about it, y
 
 Maybe it can help with play integrity, like with Tricky Store mode, which can spoof vendor date for attestation based on
 pre-set value, which you would need to manually change, or by using prop value, which can be provided by this module.
+
+## Using with [TrickyStore](https://github.com/5ec1cff/TrickyStore/blob/release/README.md)?
+please add/change
+> vendor=prop
+in /data/adb/tricky_store/security_patch.txt
+to let new value be used when spoofing attestation.
