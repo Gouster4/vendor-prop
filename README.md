@@ -1,0 +1,20 @@
+## What does this module do?
+It does basically run single command in post-fs-data.
+> resetprop -n ro.vendor.build.security_patch $(getprop ro.build.version.security_patch)
+
+## How does it work?
+resetprop sets ro.vendor.build.security_patch prop value to result of command getprop ro.build.version.security_patch,
+which does return ro.build.version.security_patch prop value.
+
+## What it actually does?
+It does change vendor patch date to match system patch date. It doesnt update vendor itself. Just date displayed.
+
+## How is this usefull?
+Older android devices doesnt get stock rom updates, which means, vendor partition isnt updated.
+With this script we can get vendor date matched to system date, so with up-to-date custom ROM,
+it does appear that vendor is up-to-date too. But its not, vendor binaries are not touched by this module.
+It does trick LineageOS Trust that vendor is up-to-date. If you are aware about vendor being outdated,
+and you dont want to be notified, because there is nothing we can do about it, you can use this module.
+
+Maybe it can help with play integrity, like with Tricky Store mode, which can spoof vendor date for attestation based on
+pre-set value, which you would need to manually change, or by using prop value, which can be provided by this module.
