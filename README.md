@@ -22,6 +22,6 @@ pre-set value, which you would need to manually change, or by using prop value, 
 ## Using with [TrickyStore](https://github.com/5ec1cff/TrickyStore/blob/release/README.md)?
 please add/change
 > vendor=prop
+> 
 in /data/adb/tricky_store/security_patch.txt
-
 to let new value be used when spoofing attestation.
