@@ -20,8 +20,10 @@ Maybe it can help with play integrity, like with Tricky Store mode, which can sp
 pre-set value, which you would need to manually change, or by using prop value, which can be provided by this module.
 
 ## Using with [TrickyStore](https://github.com/5ec1cff/TrickyStore/blob/release/README.md)?
-please add/change
+If you created security_patch.txt add/change
 > vendor=prop
 > 
 in /data/adb/tricky_store/security_patch.txt
 to let new value be used when spoofing attestation.
+
+If you didnt creted security_patch.txt, this module will create one for you. You dont need to do anything. (since v2)
