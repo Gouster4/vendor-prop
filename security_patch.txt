@@ -1,0 +1,8 @@
+# do not hack os security patch level
+system=no
+# do not hack boot patch level
+boot=no
+# keep vendor patch consistent with prop
+vendor=prop
+# default value
+# all=20241101
