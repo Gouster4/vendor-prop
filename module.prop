@@ -1,6 +1,6 @@
 id=vendor-prop
 name=Vendor prop updater
-version=v1
+version=v2
 versionCode=1
 author=gouster4
 description=Sync vendor patch prop date with system patch date
