@@ -1,6 +1,7 @@
 ## What does this module do?
-It does basically run single command in post-fs-data.
+It does basically run single command.
 > resetprop -n ro.vendor.build.security_patch $(getprop ro.build.version.security_patch)
+And creates security_patch.txt if it didint exist already, and if TrickyStore directory is found.
 
 ## How does it work?
 resetprop sets ro.vendor.build.security_patch prop value to result of command getprop ro.build.version.security_patch,
